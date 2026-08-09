@@ -1,0 +1,104 @@
+% Въ лѣто Господне ҂вк҃ѕ.
+%
+% Господи Іисусе Христе, Сыне Божій, помилуй меня грѣшнаго.
+
+\documentclass[20pt]{extarticle}
+
+\usepackage[a5paper, portrait, margin=6pt, top=0pt, bottom=0pt]{geometry}
+
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{2 on 1}[a4paper, landscape]
+
+\usepackage{fontspec}
+\usepackage{xkeyval}
+\usepackage{microtype}
+
+\usepackage{polyglossia}
+\setmainlanguage{churchslavonic}
+
+\usepackage{churchslavonic}
+\usepackage{lettrine}
+\usepackage{graphicx}
+
+\usepackage{hyperref}
+\hypersetup{
+	pdftitle={На лiтiи стiхиры},
+	pdfauthor={Православная Церковь}
+}
+
+
+\makeatletter
+
+\def\@texttop{\vfill}
+\def\@textbottom{\vfill}
+
+\makeatother
+
+
+\newcommand{\cuL}[1]{\scalebox{1.5}{\cuKinovarColor#1}}
+\newcommand{\cul}[1]{\mbox{\cuKinovarColor#1}}
+
+\newfontfamily\churchslavonicfont[Script=Cyrillic,Ligatures=TeX,HyphenChar=_]{Acathist}
+%\newfontfamily\cyrillicfontsf{DejaVu Sans}
+%\newfontfamily\noto{Noto Sans Symbols 2}
+
+\hyphenpenalty=10000
+\setlength\emergencystretch{4em}
+\def\hyph{{\_}{}{}\penalty-10000}
+
+%\linespread{1.2}
+\setlength{\parindent}{1cm}
+%\setlength{\parskip}{8pt}
+
+\newcommand{\sub}[1]{\vspace{3pt}{\centering\cuKinovar{#1}\par}}
+
+
+\begin{document}
+
+\pagestyle{empty}
+
+
+\begin{center}
+
+\cuKinovar{На лїті́и стїхи̑ры, гла́съ а҃, самогла́сны. \\
+\hspace{-3pt}Стеѳа́на свѧтогра́дца:} \\
+\cuL Нача́ло на́шегѡ спасе́нїѧ, лю́дїе, дне́сь бы́сть: \\
+се́ бо пронарече́ннаѧ ѿ родѡ́въ дре́внихъ, \\
+\hspace{-2pt}мт҃и и҆ дв҃а, и҆ прїѧ́телище бж҃їе, \\
+\hspace{-1.7pt}ѿ непло́дове роди́тисѧ происхо́дитъ, \\
+цвѣ́тъ ѿ і҆ессе́а, и҆ ѿ ко́рене є҆гѡ̀ же́злъ прозѧбѐ. \\
+\cul Да ра́дꙋетсѧ а҆да́мъ пра́ѻтецъ, \\
+и҆ є҆́ѵа да весели́тсѧ ра́достїю: \\
+се́ бо созда́ннаѧ ѿ ребра̀ а҆да́мова \\
+дще́рь и҆ внꙋ́кꙋ блажи́тъ ꙗ҆́вственнѣ, \\
+\hspace{-3pt}роди́сѧ бо мнѣ́, речѐ, и҆збавле́нїе, \\
+є҆гѡ́же ра́ди ѿ ѹ҆́зъ а҆́довыхъ свобождꙋ́сѧ. \\
+\cul Да ра́дꙋетсѧ дв҃дъ бїѧ̀ въ гꙋ́сли, \\
+и҆ да благослови́тъ бг҃а: \\
+се́ бо дв҃а происхо́дитъ ѿ ѹ҆тро́бы непло́дныѧ, \\
+ко спасе́нїю дꙋ́шъ на́шихъ.
+
+\vspace{8pt}
+\cuKinovar{Гла́съ в҃:}
+\cuL Прїиди́те любодѣ́вственнїи всѝ, и҆ чистоты̀ рачи́телїе прїиди́те под̾ими́те любо́вїю дѣ́вства похвалꙋ̀, ѿ ка́мене тве́рдагѡ текꙋ́щїй и҆сто́чникъ жи́зни, и҆ ѿ безча́дствꙋющїѧ кꙋпинꙋ̀ невеще́ственнагѡ ѻ҆гнѧ̀, ѡ҆чища́ющагѡ и҆ просвѣща́ющагѡ дꙋ́шы на́шѧ.
+
+\end{center}
+
+
+\newpage
+\newgeometry{margin=1cm}
+\renewfontfamily\churchslavonicfont[Script=Cyrillic,Ligatures=TeX,HyphenChar=_]{Triodion}
+\churchslavonicfont\fontsize{17}{21}\selectfont
+
+\sub{А҆нато́лїа патрїа́рха:}
+
+\cuL Что̀ шꙋ́мъ пра́зднꙋющихъ быва́етъ; і҆ѡакі́мъ и҆ а҆́нна торжествꙋ́ютъ та́йнѡ, ра́дꙋйтесѧ съ на́ми, глаго́люще, а҆да́ме и҆ є҆́ѵо дне́сь: ꙗ҆́кѡ и҆́мже дре́вле престꙋпле́нїемъ затвори́ша ра́й, пло́дъ бл҃госла́венъ на́мъ даде́сѧ, бг҃о\hyph ѻтрокови́ца марі́а, ѿверза́ющи є҆гѡ̀ всѣ̑мъ вхо́дъ.
+
+\textls[30]{\cuL Пронарече́ннаѧ всѣ́хъ цр҃и́ца, бж҃їе ѡ҆би́телище,} ѿ непло́дныѧ дне́сь ᲂу҆тро́бы про́йде, а҆́нны сла́вныѧ, присносꙋ́щнагѡ сꙋщества̀, бжⷭ҇твенное пребыва́лище: є҆́юже безстꙋ́дный а҆́дъ попра́сѧ, и҆ всеро́днаѧ є҆́ѵа въ тве́рдꙋю жи́знь вво́дитсѧ. то́й досто́йнѡ возопїи́мъ: бл҃же́нна ты̀ въ жена́хъ, и҆ пло́дъ чре́ва твоегѡ̀ бл҃гослове́нъ.
+
+\sub{Сла́ва, и҆ ны́нѣ, гла́съ и҃. Се́ргїа патрїа́рха:}
+
+\cuL Въ благознамени́тый де́нь пра́здника на́шегѡ, вострꙋ́бимъ дꙋхо́вною цѣвни́цею: ꙗ҆́же бо ѿ сѣ́мене дв҃дова, дне́сь ражда́етсѧ мт҃и живота̀, тмꙋ̀ раз\hyph рѣша́ющи, а҆да́мово ѡ҆бновле́нїе, и҆ є҆́ѵино воззва́нїе, и҆ нетлѣ́нїѧ и҆сто́чникъ, тлѝ премѣне́нїе. є҆ѧ́же ра́ди мы̀ ѡ҆божи́хомсѧ, и҆ ѿ сме́рти и҆зба́влени бы́хомъ, и҆ возопїи́мъ то́й съ гаврїи́ломъ вѣ́рнїи: ра́дꙋйсѧ, бл҃года́тнаѧ, гдⷭ҇ь съ тобо́ю, тебє̀ ра́ди да́рꙋѧ на́мъ ве́лїю ми́лость.
+
+
+\end{document}
