@@ -1,0 +1,84 @@
+% Въ лѣто Господне ҂вк҃ѕ.
+%
+% Господи Іисусе Христе, Сыне Божій, помилуй меня грѣшнаго.
+
+\documentclass[20pt]{extarticle}
+
+\usepackage[a5paper,margin=.6cm,top=0pt,bottom=0pt]{geometry}
+
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{2 on 1}[a4paper, landscape]
+
+\usepackage{fontspec}
+\usepackage{xkeyval}
+\usepackage{microtype}
+\usepackage{parskip}
+
+\usepackage{polyglossia}
+\setmainlanguage{churchslavonic}
+
+\usepackage{churchslavonic}
+\usepackage{lettrine}
+\usepackage{graphicx}
+
+\usepackage{hyperref}
+\hypersetup{
+	pdftitle={На лiтiи стiхиры},
+	pdfauthor={Православная Церковь}
+}
+
+
+\makeatletter
+
+\def\@texttop{\vfill}
+\def\@textbottom{\vfill}
+
+\makeatother
+
+
+\newcommand{\cuL}[1]{\scalebox{1.5}{\cuKinovarColor#1}}
+\newcommand{\cul}[1]{\mbox{\cuKinovarColor#1}}
+
+\renewcommand\star[1][\relax]{\smash{\rlap{\scalebox{1.5}{%
+	\hspace{-1pt}\raisebox{-1.5pt}{%
+	\if\relax\detokenize{#1}\relax%
+		\cuKinovarColor%
+	\fi%
+	*%
+}}}}}
+
+\newfontfamily\churchslavonicfont[Script=Cyrillic,Ligatures=TeX,HyphenChar=_]{Acathist}
+%\newfontfamily\cyrillicfontsf{DejaVu Sans}
+%\newfontfamily\noto{Noto Sans Symbols 2}
+
+\hyphenpenalty=10000
+\setlength\emergencystretch{4em}
+\def\hyph{{\_}{}{}\penalty-10000}
+
+%\linespread{1.2}
+%\setlength{\parindent}{1cm}
+\setlength{\parskip}{0pt}
+
+\renewcommand{\title}[1]{{\centering\Large\cuKinovar{#1}\par}}
+\newcommand\sub[1]{{\centering\cuKinovar{#1}\par}}
+\renewcommand{\emph}[1]{\mbox{\textls[200]{#1}}}
+
+
+\begin{document}
+
+\pagestyle{empty}
+
+
+\large
+
+\sub{Тропа́рь, гла́съ д҃.}
+
+\begin{center}
+
+\cuL{Р}жⷭ҇тво̀ твоѐ, бцⷣе дв҃о\star, ра́дость возвѣстѝ все́й вселе́ннѣй\star:
+и҆зъ тебє̀ бо возсїѧ̀ со́лнце пра́вды, хрⷭ҇то́съ бг҃ъ на́шъ\star, \\ и҆ разрꙋши́въ клѧ́твꙋ,
+дадѐ благослове́нїе\star[], \\ и҆, ѹ҆праздни́въ сме́рть, дарова̀ на́мъ живо́тъ вѣ́чный.
+
+\end{center}
+
+\end{document}
