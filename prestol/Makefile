@@ -1,4 +1,4 @@
-VERSION := 0.1
+VERSION := 1.0
 TARGET := $(notdir $(patsubst %/,%,$(dir $(abspath $(lastword $(MAKEFILE_LIST))))))
 BUILD_DIR ?= build
 
