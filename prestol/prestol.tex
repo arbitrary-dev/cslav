@@ -40,6 +40,13 @@
 \newcommand{\cul}[1]{\mbox{\cuKinovarColor#1}}
 
 \renewcommand\star[1][\relax]{\smash{\rlap{\scalebox{1.5}{%
+	\hspace{-3pt}\raisebox{-1.5pt}{%
+	\if\relax\detokenize{#1}\relax%
+		\cuKinovarColor%
+	\fi%
+	*%
+}}}}}
+\newcommand\sstar[1][\relax]{\smash{\rlap{\scalebox{1.5}{%
 	\hspace{-1pt}\raisebox{-1.5pt}{%
 	\if\relax\detokenize{#1}\relax%
 		\cuKinovarColor%
@@ -51,7 +58,7 @@
 %\newfontfamily\cyrillicfontsf{DejaVu Sans}
 %\newfontfamily\noto{Noto Sans Symbols 2}
 
-\hyphenpenalty=10000
+%\hyphenpenalty=10000
 \setlength\emergencystretch{4em}
 \def\hyph{{\_}{}{}\penalty-10000}
 
@@ -73,37 +80,32 @@
 \sub{Тропа́рь, гла́съ д҃.}
 \vspace{4pt}
 
-\begin{center}
-
-\cuL{Р}жⷭ҇тво̀ твоѐ, бцⷣе дв҃о\star, ра́дость возвѣстѝ все́й вселе́ннѣй\star:
-и҆зъ тебѐ бо возсїѧ̀ со́лнце пра́вды, хрⷭ҇то́съ бг҃ъ на́шъ\star, \\ и҆ разрꙋши́въ клѧ́твꙋ,
-дадѐ благослове́нїе\star[], \\ и҆, ѹ҆праздни́въ сме́рть, дарова̀ на́мъ живо́тъ вѣ́чный.
-
-\end{center}
+\cuL{Р}жⷭ҇тво̀ твоѐ, бцⷣе дв҃о\star, ра́дость возвѣстѝ все́й вселе́ннѣй\sstar:
+и҆зъ тебѐ бо возсїѧ̀ сл҃нце пра́вды, хрⷭ҇то́съ бг҃ъ на́шъ\star, и҆ разрꙋши́въ клѧ́твꙋ,
+дадѐ бл҃гослове́нїе\star[], и҆, ѹ҆праздни́въ
+\hspace*{.3cm} сме́рть, дарова̀ на́мъ живо́тъ вѣ́чный.
 
 
 \vspace{12pt}
 \sub{Конда́къ, гла́съ д҃.}
 
-\begin{center}
-
-\cuL{І҆}ѡакі́мъ и҆ а҆́нна поноше́нїѧ безча́дства\star, и҆ а҆да́мъ и҆ є҆́ва ѿ тлѝ сме́ртныѧ
-свободи́стасѧ\star, пречⷭ҇таѧ\star, во ст҃ѣ́мъ ржⷭ҇твѣ̀ твое́мъ\star. То пра́зднꙋютъ
-и҆ лю́дїе твоѝ, вины̀ прегрѣше́нїй изба́вльшесѧ\star, внегда̀ зва́ти тѝ\star[]:
-непло́ды ражда́етъ бцⷣꙋ и҆ пита́тельницꙋ жи́зни на́шеѧ.
-
-\end{center}
+\cuL{І҆}ѡакі́мъ и҆ а҆́нна поноше́нїѧ безча́дства\star, \linebreak
+и҆ а҆да́мъ и҆ є҆́ва ѿ тлѝ сме́ртныѧ
+свободи́\hyph стасѧ\star, пречⷭ҇таѧ\star, во ст҃ѣ́мъ ржⷭ҇твѣ̀ твое́мъ\star. То пра́зднꙋютъ
+и҆ лю́дїе твоѝ, вины̀ прегрѣ\hyph
+\textls[40]{ше́нїй изба́вльшесѧ\star, внегда̀ зва́ти тѝ\sstar[]:} \linebreak
+\textls[30]{непло́ды ражда́етъ бцⷣꙋ и҆ пита́тельницꙋ}
+\hspace*{3.8cm} \textls[40]{ж\hspace{1pt}и́зни на́шеѧ.}
 
 
 \vspace{12pt}
 \sub{Велича́нїе:}
 
-\begin{center}
+\textls[50]{%
+\cuL{В}\hspace{1pt}елича́емъ тѧ̀\star, п\hspace{1pt}р\hspace{1pt}е\hspace{1pt}с\hspace{1pt}т҃а́ѧ дв҃о\star, и҆ чти́мъ}
+\textls[40]{\mbox{с\hspace{2pt}т҃ы́хъ} твои́хъ роди́телей\sstar, и҆ всесла́вное} \linebreak
+\hspace*{2.9cm} \textls[30]{сла́вимъ\star[] ржⷭ҇тво̀ твоѐ.}
 
-\cuL{В}елича́емъ тѧ̀\star, прест҃а́ѧ дв҃о\star, и҆ чти́мъ ст҃ы́хъ твои́хъ
-роди́телей\star, и҆ всесла́вное сла́вимъ\star[] ржⷭ҇тво̀ твоѐ.
-
-\end{center}
-\vspace{12pt}
+\vspace{.5cm}
 
 \end{document}

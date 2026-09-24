@@ -1,12 +1,12 @@
-VERSION := 1.0
+VERSION := 1.1
 TARGET := $(notdir $(patsubst %/,%,$(dir $(abspath $(lastword $(MAKEFILE_LIST))))))
 BUILD_DIR ?= build
 
 .PHONY: all $(TARGET)
 
-all: $(TARGET)
+all: $(TARGET) $(TARGET)-censored
 
-$(TARGET): %: %.tex
+%: %.tex
 	@mkdir -p $(BUILD_DIR)
 	lualatex -output-directory=$(BUILD_DIR) -jobname=$@-$(VERSION) $<
 	rm -f $(BUILD_DIR)/$@-$(VERSION).{aux,log,out}
